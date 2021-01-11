@@ -9,16 +9,16 @@ package SILo;
  *
  * @author USER
  */
-public class SearchItemForm extends javax.swing.JFrame {
+public class NewItemForm extends javax.swing.JFrame {
 
     MainPage mp;
     /**
-     * Creates new form SearchItemForm
+     * Creates new form NewItemForm
      */
-    public SearchItemForm() {
+    public NewItemForm() {
         initComponents();
         setLocationRelativeTo(mp);
-        this.setTitle("Search Item Form");
+        this.setTitle("New Item Form");
     }
 
     /**
@@ -31,47 +31,30 @@ public class SearchItemForm extends javax.swing.JFrame {
     private void initComponents() {
 
         backbtn = new javax.swing.JButton();
-        searchItemTF = new javax.swing.JTextField();
-        searchbtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(500, 500));
 
-        backbtn.setText("Back");
+        backbtn.setText("back");
         backbtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backbtnActionPerformed(evt);
             }
         });
 
-        searchItemTF.setText("put text here ....!");
-
-        searchbtn.setText("search");
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(163, 163, 163)
-                        .addComponent(backbtn))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(searchItemTF, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(28, 28, 28)
-                        .addComponent(searchbtn)))
-                .addContainerGap(100, Short.MAX_VALUE))
+                .addGap(154, 154, 154)
+                .addComponent(backbtn)
+                .addContainerGap(187, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(30, 30, 30)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(searchItemTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(searchbtn))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 207, Short.MAX_VALUE)
+                .addContainerGap(262, Short.MAX_VALUE)
                 .addComponent(backbtn)
                 .addContainerGap())
         );
@@ -101,27 +84,25 @@ public class SearchItemForm extends javax.swing.JFrame {
 //                }
 //            }
 //        } catch (ClassNotFoundException ex) {
-//            java.util.logging.Logger.getLogger(SearchItemForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//            java.util.logging.Logger.getLogger(NewItemForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
 //        } catch (InstantiationException ex) {
-//            java.util.logging.Logger.getLogger(SearchItemForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//            java.util.logging.Logger.getLogger(NewItemForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
 //        } catch (IllegalAccessException ex) {
-//            java.util.logging.Logger.getLogger(SearchItemForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//            java.util.logging.Logger.getLogger(NewItemForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
 //        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-//            java.util.logging.Logger.getLogger(SearchItemForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//            java.util.logging.Logger.getLogger(NewItemForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
 //        }
 //        //</editor-fold>
 //
 //        /* Create and display the form */
 //        java.awt.EventQueue.invokeLater(new Runnable() {
 //            public void run() {
-//                new SearchItemForm().setVisible(true);
+//                new NewItemForm().setVisible(true);
 //            }
 //        });
 //    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton backbtn;
-    private javax.swing.JTextField searchItemTF;
-    private javax.swing.JButton searchbtn;
     // End of variables declaration//GEN-END:variables
 }

@@ -9,16 +9,16 @@ package SILo;
  *
  * @author USER
  */
-public class SearchItemForm extends javax.swing.JFrame {
+public class SearchDeliveryNote extends javax.swing.JFrame {
 
     MainPage mp;
     /**
-     * Creates new form SearchItemForm
+     * Creates new form SearchDeliveryNote
      */
-    public SearchItemForm() {
+    public SearchDeliveryNote() {
         initComponents();
         setLocationRelativeTo(mp);
-        this.setTitle("Search Item Form");
+        this.setTitle("Search Delivery Note");
     }
 
     /**
@@ -30,23 +30,33 @@ public class SearchItemForm extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        backbtn = new javax.swing.JButton();
-        searchItemTF = new javax.swing.JTextField();
+        searchDNFormTF = new javax.swing.JTextField();
         searchbtn = new javax.swing.JButton();
+        backbtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(500, 500));
 
-        backbtn.setText("Back");
+        searchDNFormTF.setText("put text here ...!");
+        searchDNFormTF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                searchDNFormTFActionPerformed(evt);
+            }
+        });
+
+        searchbtn.setText("search");
+        searchbtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                searchbtnActionPerformed(evt);
+            }
+        });
+
+        backbtn.setText("back");
         backbtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backbtnActionPerformed(evt);
             }
         });
-
-        searchItemTF.setText("put text here ....!");
-
-        searchbtn.setText("search");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -55,29 +65,37 @@ public class SearchItemForm extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(163, 163, 163)
-                        .addComponent(backbtn))
+                        .addGap(20, 20, 20)
+                        .addComponent(searchDNFormTF, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(searchbtn))
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(searchItemTF, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(28, 28, 28)
-                        .addComponent(searchbtn)))
-                .addContainerGap(100, Short.MAX_VALUE))
+                        .addGap(154, 154, 154)
+                        .addComponent(backbtn)))
+                .addContainerGap(111, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(30, 30, 30)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(26, 26, 26)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(searchItemTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(searchDNFormTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(searchbtn))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 207, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 211, Short.MAX_VALUE)
                 .addComponent(backbtn)
                 .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void searchbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchbtnActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_searchbtnActionPerformed
+
+    private void searchDNFormTFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchDNFormTFActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_searchDNFormTFActionPerformed
 
     private void backbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backbtnActionPerformed
         // TODO add your handling code here:
@@ -101,27 +119,27 @@ public class SearchItemForm extends javax.swing.JFrame {
 //                }
 //            }
 //        } catch (ClassNotFoundException ex) {
-//            java.util.logging.Logger.getLogger(SearchItemForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//            java.util.logging.Logger.getLogger(SearchDeliveryNote.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
 //        } catch (InstantiationException ex) {
-//            java.util.logging.Logger.getLogger(SearchItemForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//            java.util.logging.Logger.getLogger(SearchDeliveryNote.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
 //        } catch (IllegalAccessException ex) {
-//            java.util.logging.Logger.getLogger(SearchItemForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//            java.util.logging.Logger.getLogger(SearchDeliveryNote.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
 //        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-//            java.util.logging.Logger.getLogger(SearchItemForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//            java.util.logging.Logger.getLogger(SearchDeliveryNote.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
 //        }
 //        //</editor-fold>
 //
 //        /* Create and display the form */
 //        java.awt.EventQueue.invokeLater(new Runnable() {
 //            public void run() {
-//                new SearchItemForm().setVisible(true);
+//                new SearchDeliveryNote().setVisible(true);
 //            }
 //        });
 //    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton backbtn;
-    private javax.swing.JTextField searchItemTF;
+    private javax.swing.JTextField searchDNFormTF;
     private javax.swing.JButton searchbtn;
     // End of variables declaration//GEN-END:variables
 }

@@ -113,14 +113,17 @@ public class DeliveryNoteForm extends javax.swing.JPanel {
 
     private void searchbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchbtnActionPerformed
         // TODO add your handling code here:
+        new SearchDeliveryNote().setVisible(true);
     }//GEN-LAST:event_searchbtnActionPerformed
 
     private void sendbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sendbtnActionPerformed
         // TODO add your handling code here:
+        new SendingForm().setVisible(true);
     }//GEN-LAST:event_sendbtnActionPerformed
 
     private void printbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_printbtnActionPerformed
         // TODO add your handling code here:
+        new PrintDialog().setVisible(true);
     }//GEN-LAST:event_printbtnActionPerformed
 
 
