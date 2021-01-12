@@ -14,8 +14,7 @@ import javax.swing.SwingUtilities;
  */
 public class Main extends JFrame{
     
-    private DbHandler dbh = null;
-    private MainPage mp = null;
+
     
 
     
@@ -29,7 +28,7 @@ public class Main extends JFrame{
     }
     
         public Main() {
-        dbh = new DbHandler();
+        
         
         
     }

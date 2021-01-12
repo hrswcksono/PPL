@@ -12,7 +12,9 @@ import javax.swing.JPanel;
  * @author USER
  */
 public class MainPage extends javax.swing.JFrame {
-    Main mp;
+    Main mn;
+    private DbHandler dbh = null;
+    private MainPage mp = null;
 //    private ItemForm itemPanel;
     /**
      * Creates new form MainP
@@ -24,8 +26,13 @@ public class MainPage extends javax.swing.JFrame {
         pack();
         setVisible(true);
         setResizable(false);
-        setLocationRelativeTo(mp);
+        setLocationRelativeTo(mn);
         this.setTitle("Main Page");
+        
+        
+        //component
+        dbh = new DbHandler();
+        
     }
 
     /**

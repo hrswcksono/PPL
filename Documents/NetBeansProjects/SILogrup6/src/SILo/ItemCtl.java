@@ -13,11 +13,18 @@ import javax.swing.table.DefaultTableModel;
  */
 public class ItemCtl {
     
+    //Lihat Daftar Item
+    public void searchItemList(){
+        
+    }
+    
+    public String[] 
+    
     public void onSearchClicked(String keyword){
-//        items[] item = dbhandler.searchItem(keyword);
+//        Item[] item = dbhandler.searchItem(keyword);
         String[] item = dbh.searchItem(keyword);
         
-        items[] itemlist = createItems(results);
+        Item[] itemlist = createItems(results);
         
     }
     
@@ -26,12 +33,15 @@ public class ItemCtl {
         model.addRow(dataRow);
     }
     
-    private items[] createItems(String[] results){
+    private Item[] createItems(String[] results){
         
         return null;
         
     }
     
+    
+    
+    public ItemForm iform;
     private DbHandler dbh;
     private NewItemForm nif;
 }
