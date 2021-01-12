@@ -15,4 +15,8 @@ public class DbHandler {
     public String[] searchItem(String keyword) {
         return null;
     }
+    
+    public void showItem(){
+        
+    }
 }

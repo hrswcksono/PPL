@@ -5,6 +5,8 @@
  */
 package SILo;
 
+import javax.swing.table.DefaultTableModel;
+
 /**
  *
  * @author USER
@@ -12,8 +14,24 @@ package SILo;
 public class ItemCtl {
     
     public void onSearchClicked(String keyword){
-        items[] item = dbhandler.searchItem(keyword);
+//        items[] item = dbhandler.searchItem(keyword);
+        String[] item = dbh.searchItem(keyword);
+        
+        items[] itemlist = createItems(results);
+        
     }
     
-    private DbHandler dbhandler;
+    public void AddRowToJTable(Object[] dataRow){
+        DefaultTableModel model = (DefaultTableModel)jTable.getModel();
+        model.addRow(dataRow);
+    }
+    
+    private items[] createItems(String[] results){
+        
+        return null;
+        
+    }
+    
+    private DbHandler dbh;
+    private NewItemForm nif;
 }

@@ -10,7 +10,7 @@ package SILo;
  * @author USER
  */
 public class items {
-    public String[] items;
+    Object items[][] ;
     
     
     public items(){

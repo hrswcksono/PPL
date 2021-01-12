@@ -6,16 +6,32 @@
 package SILo;
 
 import javax.swing.JFrame;
+import javax.swing.SwingUtilities;
 
 /**
  *
  * @author USER
  */
 public class Main extends JFrame{
-    public static void main(String args[]){
-        new MainPage();        
+    
+    private DbHandler dbh = null;
+    private MainPage mp = null;
+    
+
+    
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                new MainPage();
+            }
+        });
     }
     
-    public Main() {
+        public Main() {
+        dbh = new DbHandler();
+        
+        
     }
+
 }
