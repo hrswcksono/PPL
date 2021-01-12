@@ -13,35 +13,49 @@ import javax.swing.table.DefaultTableModel;
  */
 public class ItemCtl {
     
+    public ItemCtl() {
+        
+    }
+    
+    public void initAdd(){
+        addNewItem(new Object[]{
+            nif.getIdTF().getText(),
+            nif.getBarcodeTF().getText(),
+            nif.getTitleTF().getText(),
+            nif.getDescriptionTF().getText(),
+            nif.getNumberOfStockTF().getText(),
+            nif.getManufacturerTF().getText(),
+            nif.getUrlTF().getText()
+        });
+//        nif.getSubmitbtn().addActionListener(e -> createItems());
+    }
+    
     //Lihat Daftar Item
     public void searchItemList(){
         
     }
     
-    public String[] 
-    
-    public void onSearchClicked(String keyword){
-//        Item[] item = dbhandler.searchItem(keyword);
-        String[] item = dbh.searchItem(keyword);
-        
-        Item[] itemlist = createItems(results);
-        
-    }
-    
-    public void AddRowToJTable(Object[] dataRow){
-        DefaultTableModel model = (DefaultTableModel)jTable.getModel();
+    public static void addNewItem(Object[] dataRow){
+        DefaultTableModel model = (DefaultTableModel)ItemForm.getjTable1().getModel();
         model.addRow(dataRow);
     }
     
-    private Item[] createItems(String[] results){
-        
-        return null;
+    public void showRefresedItemList(){
         
     }
     
+    private void createItems(){
+        it.setId(Integer.parseInt(nif.getIdTF().getText()));
+        it.setBarcode(nif.getBarcodeTF().getText());
+        it.setTitle(nif.getTitleTF().getText());
+        it.setDescription(nif.getDescriptionTF().getText());
+        it.setNumberOfStock(Integer.parseInt(nif.getNumberOfStockTF().getText()));
+        it.setManufacturer(nif.getManufacturerTF().getText());
+        it.setUrl(nif.getUrlTF().getText());
+    }
     
-    
-    public ItemForm iform;
+    private Item it;
+    private ItemForm iform;
     private DbHandler dbh;
     private NewItemForm nif;
 }

@@ -37,13 +37,13 @@
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                  <Component id="url" alignment="0" pref="129" max="32767" attributes="0"/>
-                                  <Component id="manufacturer" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="numberOfStock" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="description" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="title" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="id" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="barcode" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="urlTF" alignment="0" pref="129" max="32767" attributes="0"/>
+                                  <Component id="manufacturerTF" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="numberOfStockTF" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="descriptionTF" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="titleTF" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="idTF" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="barcodeTF" alignment="0" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
@@ -75,37 +75,37 @@
               <Component id="Title" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="id" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="idTF" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="barcode" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="barcodeTF" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="title" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="titleTF" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="description" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="descriptionTF" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="numberOfStock" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="numberOfStockTF" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="manufacturer" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="manufacturerTF" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="url" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="urlTF" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
@@ -131,19 +131,19 @@
         <Property name="text" type="java.lang.String" value="New Item Form"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="id">
+    <Component class="javax.swing.JTextField" name="idTF">
     </Component>
-    <Component class="javax.swing.JTextField" name="barcode">
+    <Component class="javax.swing.JTextField" name="barcodeTF">
     </Component>
-    <Component class="javax.swing.JTextField" name="title">
+    <Component class="javax.swing.JTextField" name="titleTF">
     </Component>
-    <Component class="javax.swing.JTextField" name="description">
+    <Component class="javax.swing.JTextField" name="descriptionTF">
     </Component>
-    <Component class="javax.swing.JTextField" name="numberOfStock">
+    <Component class="javax.swing.JTextField" name="numberOfStockTF">
     </Component>
-    <Component class="javax.swing.JTextField" name="manufacturer">
+    <Component class="javax.swing.JTextField" name="manufacturerTF">
     </Component>
-    <Component class="javax.swing.JTextField" name="url">
+    <Component class="javax.swing.JTextField" name="urlTF">
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>

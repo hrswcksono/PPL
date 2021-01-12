@@ -14,22 +14,18 @@ import javax.swing.SwingUtilities;
  */
 public class Main extends JFrame{
     
-
-    
-
-    
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                new MainPage();
-            }
-        });
+        new MainPage();
+//        SwingUtilities.invokeLater(new Runnable() {
+//            @Override
+//            public void run() {
+//                new MainPage();
+//            }
+//        });
     }
     
         public Main() {
-        
-        
+         
         
     }
 

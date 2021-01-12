@@ -5,6 +5,11 @@
  */
 package SILo;
 
+import javax.swing.JFrame;
+import javax.swing.JTable;
+import javax.swing.WindowConstants;
+import javax.swing.table.DefaultTableModel;
+
 /**
  *
  * @author USER
@@ -114,27 +119,57 @@ public class ItemForm extends javax.swing.JPanel {
 
     private void editbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editbtnActionPerformed
         // TODO add your handling code here:
-        new EditItemForm().setVisible(true);
+//        new EditItemForm().setVisible(true);
+        EditItemForm frame = new EditItemForm();
+        frame.setVisible(true);
+        frame.pack();
+        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);    
     }//GEN-LAST:event_editbtnActionPerformed
 
     private void searchbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchbtnActionPerformed
         // TODO add your handling code here:
-        new SearchItemForm().setVisible(true);
-        
+//        new SearchItemForm().setVisible(true);
+        SearchItemForm frame = new SearchItemForm();
+        frame.setVisible(true);
+        frame.pack();
+        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);    
     }//GEN-LAST:event_searchbtnActionPerformed
 
     private void newbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_newbtnActionPerformed
         // TODO add your handling code here:
-        new NewItemForm().setVisible(true);
+//        new NewItemForm().setVisible(true);
+        NewItemForm frame = new NewItemForm();
+        frame.setVisible(true);
+        frame.pack();
+        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }//GEN-LAST:event_newbtnActionPerformed
 
 
+//    public static void AddRowToJTable(Object[] dataRow){
+//        DefaultTableModel model = (DefaultTableModel)jTable1.getModel();
+//        model.addRow(dataRow);
+//    }
+
+    public static JTable getjTable1() {
+        return jTable1;
+    }
+
+    public static void setjTable1(JTable jTable1) {
+        ItemForm.jTable1 = jTable1;
+    }
+    
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton editbtn;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
+    private static javax.swing.JTable jTable1;
     private javax.swing.JButton newbtn;
     private javax.swing.JButton searchbtn;
     // End of variables declaration//GEN-END:variables
+
+    Object setjTable1() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
 }

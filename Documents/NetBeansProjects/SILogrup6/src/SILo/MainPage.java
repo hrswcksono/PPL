@@ -139,7 +139,7 @@ public class MainPage extends javax.swing.JFrame {
         mainPanel.removeAll();
         mainPanel.revalidate();
         mainPanel.repaint();
-        mainPanel.add(item); 
+        mainPanel.add(item);
     }//GEN-LAST:event_itemsActionPerformed
 
     private void deliveryNoteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deliveryNoteActionPerformed

@@ -5,6 +5,8 @@
  */
 package SILo;
 
+import javax.swing.JFrame;
+
 /**
  *
  * @author USER
@@ -109,12 +111,18 @@ public class InvoiceForm extends javax.swing.JPanel {
 
     private void searchbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchbtnActionPerformed
         // TODO add your handling code here:
-        new SearchInvoicesForm().setVisible(true);
+        SearchInvoicesForm frame = new SearchInvoicesForm();
+        frame.setVisible(true);
+        frame.pack();
+        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }//GEN-LAST:event_searchbtnActionPerformed
 
     private void viewbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewbtnActionPerformed
         // TODO add your handling code here:
-        new ViewInvoicesDescription().setVisible(true);
+        ViewInvoicesDescription frame = new ViewInvoicesDescription();
+        frame.setVisible(true);
+        frame.pack();
+        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }//GEN-LAST:event_viewbtnActionPerformed
 
 

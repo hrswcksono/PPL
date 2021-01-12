@@ -5,12 +5,16 @@
  */
 package SILo;
 
+import javax.swing.JButton;
+import javax.swing.JTextField;
+
 /**
  *
  * @author USER
  */
 public class NewItemForm extends javax.swing.JFrame {
 
+    private ItemCtl ictl;
     MainPage mp;
     /**
      * Creates new form NewItemForm
@@ -19,8 +23,15 @@ public class NewItemForm extends javax.swing.JFrame {
         initComponents();
         setLocationRelativeTo(mp);
         this.setTitle("New Item Form");
+        
+//        intController();
     }
 
+    
+//    public void intController(){
+//        ictl = new ItemCtl();
+//        ictl.initAdd();
+//    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -32,13 +43,13 @@ public class NewItemForm extends javax.swing.JFrame {
 
         backbtn = new javax.swing.JButton();
         Title = new javax.swing.JLabel();
-        id = new javax.swing.JTextField();
-        barcode = new javax.swing.JTextField();
-        title = new javax.swing.JTextField();
-        description = new javax.swing.JTextField();
-        numberOfStock = new javax.swing.JTextField();
-        manufacturer = new javax.swing.JTextField();
-        url = new javax.swing.JTextField();
+        idTF = new javax.swing.JTextField();
+        barcodeTF = new javax.swing.JTextField();
+        titleTF = new javax.swing.JTextField();
+        descriptionTF = new javax.swing.JTextField();
+        numberOfStockTF = new javax.swing.JTextField();
+        manufacturerTF = new javax.swing.JTextField();
+        urlTF = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -95,13 +106,13 @@ public class NewItemForm extends javax.swing.JFrame {
                             .addGroup(layout.createSequentialGroup()
                                 .addContainerGap()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(url, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 129, Short.MAX_VALUE)
-                                    .addComponent(manufacturer, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(numberOfStock, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(description, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(title, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(id, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(barcode, javax.swing.GroupLayout.Alignment.LEADING)))
+                                    .addComponent(urlTF, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 129, Short.MAX_VALUE)
+                                    .addComponent(manufacturerTF, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(numberOfStockTF, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(descriptionTF, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(titleTF, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(idTF, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(barcodeTF, javax.swing.GroupLayout.Alignment.LEADING)))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(40, 40, 40)
                                 .addComponent(submitbtn)))
@@ -124,31 +135,31 @@ public class NewItemForm extends javax.swing.JFrame {
                 .addComponent(Title)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(id, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(idTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(barcode, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(barcodeTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel2))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(title, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(titleTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel3))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(description, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(descriptionTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel4))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(numberOfStock, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(numberOfStockTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel5))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(manufacturer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(manufacturerTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel6))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(url, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(urlTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel7))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(submitbtn)
@@ -164,14 +175,87 @@ public class NewItemForm extends javax.swing.JFrame {
         // TODO add your handling code here:
         dispose();
     }//GEN-LAST:event_backbtnActionPerformed
-
+    
     private void submitbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitbtnActionPerformed
         // TODO add your handling code here:
-        JFRAME_JTABLE.AddRowToJTable(new Object[]{
-            id.getText(),
-        });
+        ictl.addNewItem(new Object[]{
+            idTF.getText(),
+            barcodeTF.getText(),
+            titleTF.getText(),
+            descriptionTF.getText(),
+            numberOfStockTF.getText(),
+            manufacturerTF.getText(),
+            urlTF.getText()
+        }); 
+//        ictl.initAdd();
     }//GEN-LAST:event_submitbtnActionPerformed
 
+    public JTextField getBarcodeTF() {
+        return barcodeTF;
+    }
+
+    public void setBarcodeTF(JTextField barcodeTF) {
+        this.barcodeTF = barcodeTF;
+    }
+
+    public JTextField getDescriptionTF() {
+        return descriptionTF;
+    }
+
+    public void setDescriptionTF(JTextField descriptionTF) {
+        this.descriptionTF = descriptionTF;
+    }
+
+    public JTextField getIdTF() {
+        return idTF;
+    }
+
+    public void setIdTF(JTextField idTF) {
+        this.idTF = idTF;
+    }
+
+    public JTextField getManufacturerTF() {
+        return manufacturerTF;
+    }
+
+    public void setManufacturerTF(JTextField manufacturerTF) {
+        this.manufacturerTF = manufacturerTF;
+    }
+
+    public JTextField getNumberOfStockTF() {
+        return numberOfStockTF;
+    }
+
+    public void setNumberOfStockTF(JTextField numberOfStockTF) {
+        this.numberOfStockTF = numberOfStockTF;
+    }
+
+    public JTextField getTitleTF() {
+        return titleTF;
+    }
+
+    public void setTitleTF(JTextField titleTF) {
+        this.titleTF = titleTF;
+    }
+
+    public JTextField getUrlTF() {
+        return urlTF;
+    }
+
+    public void setUrlTF(JTextField urlTF) {
+        this.urlTF = urlTF;
+    }
+
+    public JButton getSubmitbtn() {
+        return submitbtn;
+    }
+
+    public void setSubmitbtn(JButton submitbtn) {
+        this.submitbtn = submitbtn;
+    }
+
+    
+    
     /**
      * @param args the command line arguments
      */
@@ -210,9 +294,9 @@ public class NewItemForm extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Title;
     private javax.swing.JButton backbtn;
-    private javax.swing.JTextField barcode;
-    private javax.swing.JTextField description;
-    private javax.swing.JTextField id;
+    private javax.swing.JTextField barcodeTF;
+    private javax.swing.JTextField descriptionTF;
+    private javax.swing.JTextField idTF;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -220,10 +304,14 @@ public class NewItemForm extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JTextField manufacturer;
-    private javax.swing.JTextField numberOfStock;
+    private javax.swing.JTextField manufacturerTF;
+    private javax.swing.JTextField numberOfStockTF;
     private javax.swing.JButton submitbtn;
-    private javax.swing.JTextField title;
-    private javax.swing.JTextField url;
+    private javax.swing.JTextField titleTF;
+    private javax.swing.JTextField urlTF;
     // End of variables declaration//GEN-END:variables
+
+//    Object getSubmitbtn() {
+//        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+//    }
 }
