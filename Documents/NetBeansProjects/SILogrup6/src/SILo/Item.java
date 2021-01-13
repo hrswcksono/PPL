@@ -10,14 +10,25 @@ package SILo;
  * @author USER
  */
 public class Item {
-    private Integer id;
-    private String barcode;
-    private String title;
-    private String description;
-    private Integer numberOfStock;
-    private String manufacturer;
-    private String url;
+    public Integer id;
+    public String barcode;
+    public String title;
+    public String description;
+    public Integer numberOfStock;
+    public String manufacturer;
+    public String url;
 
+    public Item(Integer id, String barcode, String title, String description, Integer numberOfStock, String manufacturer, String url) {
+        this.id = id;
+        this.barcode = barcode;
+        this.title = title;
+        this.description = description;
+        this.numberOfStock = numberOfStock;
+        this.manufacturer = manufacturer;
+        this.url = url;
+    }
+
+   
     public Integer getId() {
         return id;
     }
@@ -73,12 +84,11 @@ public class Item {
     public void setUrl(String url) {
         this.url = url;
     }
-    
-    
-    
-    
-    
-    public Item(){
-        
+
+    @Override
+    public String toString() {
+        return "Item{" + "id=" + id + ", barcode=" + barcode + ", title=" + title + ", description=" + description + ", numberOfStock=" + numberOfStock + ", manufacturer=" + manufacturer + ", url=" + url + '}';
     }
+    
+    
 }

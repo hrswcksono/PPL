@@ -12,18 +12,27 @@ import java.util.Date;
  * @author USER
  */
 public class DeliveryNote {
-    private String invoiceNumber;
     private Integer deliveryNoteNumber;
+    private Integer invoiceNumber;
     private String customerName;
     private Date orderDate;
     private Date deliveryDate;
     private String status;
 
-    public String getInvoiceNumber() {
+    public DeliveryNote(Integer deliveryNoteNumber, Integer invoiceNumber, String customerName, Date orderDate, Date deliveryDate, String status) {
+        this.deliveryNoteNumber = deliveryNoteNumber;
+        this.invoiceNumber = invoiceNumber;
+        this.customerName = customerName;
+        this.orderDate = orderDate;
+        this.deliveryDate = deliveryDate;
+        this.status = status;
+    }
+
+    public Integer getInvoiceNumber() {
         return invoiceNumber;
     }
 
-    public void setInvoiceNumber(String invoiceNumber) {
+    public void setInvoiceNumber(Integer invoiceNumber) {
         this.invoiceNumber = invoiceNumber;
     }
 
@@ -66,6 +75,10 @@ public class DeliveryNote {
     public void setStatus(String status) {
         this.status = status;
     }
+
+    @Override
+    public String toString() {
+        return "DeliveryNote{" + "deliveryNoteNumber=" + deliveryNoteNumber + ", invoiceNumber=" + invoiceNumber + ", customerName=" + customerName + ", orderDate=" + orderDate + ", deliveryDate=" + deliveryDate + ", status=" + status + '}';
+    }
     
-     
 }

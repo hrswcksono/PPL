@@ -5,6 +5,8 @@
  */
 package SILo;
 
+import koneksi.DbHandler;
+import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -17,16 +19,20 @@ public class ItemCtl {
         
     }
     
+    public void showItem() {
+        mainpage.showItemClicked();
+    }
+    
+//    public void showItem() {
+//        JPanel item = new ItemForm();
+//        item.setBounds(mainpage.getMainPanel().getBounds());
+//        mainpage.getMainPanel().removeAll();
+//        mainpage.getMainPanel().revalidate();
+//        mainpage.getMainPanel().repaint();
+//        mainpage.getMainPanel().add(item);
+//    }
+    
     public void initAdd(){
-        addNewItem(new Object[]{
-            nif.getIdTF().getText(),
-            nif.getBarcodeTF().getText(),
-            nif.getTitleTF().getText(),
-            nif.getDescriptionTF().getText(),
-            nif.getNumberOfStockTF().getText(),
-            nif.getManufacturerTF().getText(),
-            nif.getUrlTF().getText()
-        });
 //        nif.getSubmitbtn().addActionListener(e -> createItems());
     }
     
@@ -45,17 +51,18 @@ public class ItemCtl {
     }
     
     private void createItems(){
-        it.setId(Integer.parseInt(nif.getIdTF().getText()));
-        it.setBarcode(nif.getBarcodeTF().getText());
-        it.setTitle(nif.getTitleTF().getText());
-        it.setDescription(nif.getDescriptionTF().getText());
-        it.setNumberOfStock(Integer.parseInt(nif.getNumberOfStockTF().getText()));
-        it.setManufacturer(nif.getManufacturerTF().getText());
-        it.setUrl(nif.getUrlTF().getText());
+//        it.setId(Integer.parseInt(nif.getIdTF().getText()));
+//        it.setBarcode(nif.getBarcodeTF().getText());
+//        it.setTitle(nif.getTitleTF().getText());
+//        it.setDescription(nif.getDescriptionTF().getText());
+//        it.setNumberOfStock(Integer.parseInt(nif.getNumberOfStockTF().getText()));
+//        it.setManufacturer(nif.getManufacturerTF().getText());
+//        it.setUrl(nif.getUrlTF().getText());
     }
     
     private Item it;
     private ItemForm iform;
     private DbHandler dbh;
     private NewItemForm nif;
+    private MainPage mainpage;
 }

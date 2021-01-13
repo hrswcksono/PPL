@@ -3,7 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package SILo;
+package backup;
+
+import SILo.MainPage;
 
 /**
  *
@@ -35,7 +37,6 @@ public class SearchDeliveryNote extends javax.swing.JFrame {
         backbtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(500, 500));
 
         searchDNFormTF.setText("put text here ...!");
         searchDNFormTF.addActionListener(new java.awt.event.ActionListener() {

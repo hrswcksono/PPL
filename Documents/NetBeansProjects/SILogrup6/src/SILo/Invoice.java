@@ -19,6 +19,20 @@ public class Invoice {
     private Date deliveryDate;
     private String status;
 
+    public Invoice(Integer invoiceNumber, Integer poNumber, String supplierName, Date orderDate, Date deliveryDate, String status) {
+        this.invoiceNumber = invoiceNumber;
+        this.poNumber = poNumber;
+        this.supplierName = supplierName;
+        this.orderDate = orderDate;
+        this.deliveryDate = deliveryDate;
+        this.status = status;
+    }
+
+    @Override
+    public String toString() {
+        return "Invoice{" + "invoiceNumber=" + invoiceNumber + ", poNumber=" + poNumber + ", supplierName=" + supplierName + ", orderDate=" + orderDate + ", deliveryDate=" + deliveryDate + ", status=" + status + '}';
+    }
+
     public Integer getInvoiceNumber() {
         return invoiceNumber;
     }
@@ -66,18 +80,6 @@ public class Invoice {
     public void setStatus(String status) {
         this.status = status;
     }
-
-    public Invoice(Integer invoiceNumber, Integer poNumber, String supplierName, Date orderDate, Date deliveryDate, String status) {
-        this.invoiceNumber = invoiceNumber;
-        this.poNumber = poNumber;
-        this.supplierName = supplierName;
-        this.orderDate = orderDate;
-        this.deliveryDate = deliveryDate;
-        this.status = status;
-    }
-
-    
-    
-            
+       
     
 }

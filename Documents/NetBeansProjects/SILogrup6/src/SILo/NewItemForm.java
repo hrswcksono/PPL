@@ -86,6 +86,11 @@ public class NewItemForm extends javax.swing.JFrame {
         jLabel7.setText("URL");
 
         submitbtn.setText("Submit");
+        submitbtn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                submitbtnMouseClicked(evt);
+            }
+        });
         submitbtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 submitbtnActionPerformed(evt);
@@ -189,6 +194,11 @@ public class NewItemForm extends javax.swing.JFrame {
         }); 
 //        ictl.initAdd();
     }//GEN-LAST:event_submitbtnActionPerformed
+
+    private void submitbtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_submitbtnMouseClicked
+        // TODO add your handling code here:
+//        ictl.initAdd();
+    }//GEN-LAST:event_submitbtnMouseClicked
 
     public JTextField getBarcodeTF() {
         return barcodeTF;
